@@ -60,9 +60,4 @@ export default function HomePortal() {
         <button>Get Started</button>
       </section>
 
-      <footer>
-        <p>© 2026 KnowledgeNest. All rights reserved.</p>
-      </footer>
-    </div>
-  );
-}
+      
