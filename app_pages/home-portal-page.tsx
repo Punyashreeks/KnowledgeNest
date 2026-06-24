@@ -34,4 +34,13 @@ export default function HomePortal() {
           <li> Learning Games</li>
           <li> Progress Tracking</li>
         </ul>
-      </section>
+       </section>
+
+       <section>
+         <h2>About KnowledgeNest</h2>
+         <p>
+           KnowledgeNest is built to make learning simple, engaging, and
+           accessible for everyone. Students can learn at their own pace and
+           improve daily.
+         </p>
+       </section>
