@@ -1,14 +1,13 @@
 export default function HomePortal() {
   return (
     <div>
-    
+
       <header>
         <h1>KnowledgeNest</h1>
         <h2>Welcome to KnowledgeNest</h2>
         <p>Learn, Explore and Grow Every Day.</p>
       </header>
 
-      
       <nav>
         <ul>
           <li>Home</li>
@@ -19,33 +18,30 @@ export default function HomePortal() {
         </ul>
       </nav>
 
-      
       <section>
         <h2>Learn Better Every Day</h2>
         <p>Interactive educational platform designed for students.</p>
       </section>
 
-      
       <section>
         <h2>Features</h2>
         <ul>
-          <li> Structured Courses</li>
-          <li> Interactive Quizzes</li>
-          <li> Learning Games</li>
-          <li> Progress Tracking</li>
+          <li>Structured Courses</li>
+          <li>Interactive Quizzes</li>
+          <li>Learning Games</li>
+          <li>Progress Tracking</li>
         </ul>
-       </section>
+      </section>
 
-       <section>
-         <h2>About KnowledgeNest</h2>
-         <p>
-           KnowledgeNest is built to make learning simple, engaging, and
-           accessible for everyone. Students can learn at their own pace and
-           improve daily.
-         </p>
-       </section>
+      <section>
+        <h2>About KnowledgeNest</h2>
+        <p>
+          KnowledgeNest is built to make learning simple, engaging, and
+          accessible for everyone.
+        </p>
+      </section>
 
-       <section>
+      <section>
         <h2>Our Impact</h2>
         <ul>
           <li>10,000+ Students Enrolled</li>
@@ -54,55 +50,44 @@ export default function HomePortal() {
         </ul>
       </section>
 
-       <section>
+      <section>
         <h2>Start Learning Today</h2>
         <p>Join KnowledgeNest and begin your learning journey now.</p>
         <button>Get Started</button>
       </section>
 
-    
-<section>
-  <h2>What Students Say</h2>
+      <section>
+        <h2>What Students Say</h2>
+        <blockquote>"KnowledgeNest made learning fun!" – Aditi</blockquote>
+        <blockquote>"Quizzes improved my confidence." – Rahul</blockquote>
+      </section>
 
-  <blockquote>
-    "KnowledgeNest made learning fun and easy for me!" – Aditi
-  </blockquote>
+      <section>
+        <h2>Explore Categories</h2>
+        <ul>
+          <li>Science & Technology</li>
+          <li>Mathematics</li>
+          <li>Programming</li>
+          <li>General Knowledge</li>
+        </ul>
+      </section>
 
-  <blockquote>
-    "The quizzes helped me improve my confidence." – Rahul
-  </blockquote>
-</section>
+      <section>
+        <h2>Stay Updated</h2>
+        <p>Subscribe to get latest courses and updates.</p>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </section>
 
+      <section>
+        <h2>Contact Us</h2>
+        <p>Email: support@knowledgenest.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <textarea placeholder="Write your message"></textarea>
+        <br />
+        <button>Send Message</button>
+      </section>
 
-<section>
-  <h2>Explore Categories</h2>
-
-  <ul>
-    <li>Science & Technology</li>
-    <li>Mathematics</li>
-    <li>Programming</li>
-    <li>General Knowledge</li>
-  </ul>
-</section>
-
-     
-<section>
-  <h2>Stay Updated</h2>
-
-  <p>Subscribe to get latest courses and updates.</p>
-
-  <input type="email" placeholder="Enter your email" />
-  <button>Subscribe</button>
-</section>
-
-
-<section>
-  <h2>Contact Us</h2>
-
-  <p>Email: support@knowledgenest.com</p>
-  <p>Phone: +91 98765 43210</p>
-
-  <textarea placeholder="Write your message"></textarea>
-  <br />
-  <button>Send Message</button>
-</section>
+    </div>
+  );
+}
