@@ -84,3 +84,13 @@ export default function HomePortal() {
     <li>General Knowledge</li>
   </ul>
 </section>
+
+     
+<section>
+  <h2>Stay Updated</h2>
+
+  <p>Subscribe to get latest courses and updates.</p>
+
+  <input type="email" placeholder="Enter your email" />
+  <button>Subscribe</button>
+</section>
