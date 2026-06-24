@@ -53,3 +53,9 @@ export default function HomePortal() {
           <li>1M+ Quizzes Completed</li>
         </ul>
       </section>
+
+       <section>
+        <h2>Start Learning Today</h2>
+        <p>Join KnowledgeNest and begin your learning journey now.</p>
+        <button>Get Started</button>
+      </section>
