@@ -94,3 +94,15 @@ export default function HomePortal() {
   <input type="email" placeholder="Enter your email" />
   <button>Subscribe</button>
 </section>
+
+
+<section>
+  <h2>Contact Us</h2>
+
+  <p>Email: support@knowledgenest.com</p>
+  <p>Phone: +91 98765 43210</p>
+
+  <textarea placeholder="Write your message"></textarea>
+  <br />
+  <button>Send Message</button>
+</section>
