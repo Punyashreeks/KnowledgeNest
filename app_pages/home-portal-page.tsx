@@ -12,7 +12,8 @@ export default function HomePortal() {
           <li>Courses</li>
           <li>Quizzes</li>
           <li>Games</li>
-        </ul>
+          <li>Profile</li>
+	</ul>
     </nav>   
    </div>
   );
