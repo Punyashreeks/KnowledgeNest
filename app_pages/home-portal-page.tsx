@@ -44,3 +44,12 @@ export default function HomePortal() {
            improve daily.
          </p>
        </section>
+
+       <section>
+        <h2>Our Impact</h2>
+        <ul>
+          <li>10,000+ Students Enrolled</li>
+          <li>500+ Courses Available</li>
+          <li>1M+ Quizzes Completed</li>
+        </ul>
+      </section>
