@@ -60,4 +60,14 @@ export default function HomePortal() {
         <button>Get Started</button>
       </section>
 
-      
+     <section>
+  <h2>What Students Say</h2>
+
+  <blockquote>
+    "KnowledgeNest made learning fun and easy for me!" – Aditi
+  </blockquote>
+
+  <blockquote>
+    "The quizzes helped me improve my confidence." – Rahul
+  </blockquote>
+</section> 
