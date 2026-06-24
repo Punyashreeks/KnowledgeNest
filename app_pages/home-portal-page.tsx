@@ -7,12 +7,13 @@ export default function HomePortal() {
     
 
      <nav>
-      <ul>
-         <li>Home</li>
-         <li>Courses</li>
-         <li>Quizzes</li>
-      </ul>
-     </nav>   
+        <ul>
+          <li>Home</li>
+          <li>Courses</li>
+          <li>Quizzes</li>
+          <li>Games</li>
+        </ul>
+    </nav>   
    </div>
   );
 }
