@@ -15,6 +15,10 @@ export default function HomePortal() {
           <li>Profile</li>
 	</ul>
     </nav>   
-   </div>
+   
+    <section>
+     <h2>Learn Better Every Day</h2>
+   </section>
+    </div>
   );
 }
