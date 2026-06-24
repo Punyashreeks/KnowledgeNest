@@ -3,6 +3,7 @@ export default function HomePortal() {
     <div>
       <h1>KnowledgeNest</h1>
       <h2>Welcome to KnowledgeNest</h2>
-    </div>
+      <p>Learn, Explore and Grow Every Day.</p>
+     </div>
   );
 }
