@@ -59,3 +59,10 @@ export default function HomePortal() {
         <p>Join KnowledgeNest and begin your learning journey now.</p>
         <button>Get Started</button>
       </section>
+
+      <footer>
+        <p>© 2026 KnowledgeNest. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
