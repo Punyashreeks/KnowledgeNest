@@ -10,6 +10,7 @@ export default function HomePortal() {
       <ul>
          <li>Home</li>
          <li>Courses</li>
+         <li>Quizzes</li>
       </ul>
      </nav>   
    </div>
