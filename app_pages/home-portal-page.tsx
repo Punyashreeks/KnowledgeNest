@@ -60,7 +60,8 @@ export default function HomePortal() {
         <button>Get Started</button>
       </section>
 
-     <section>
+    
+<section>
   <h2>What Students Say</h2>
 
   <blockquote>
@@ -70,4 +71,16 @@ export default function HomePortal() {
   <blockquote>
     "The quizzes helped me improve my confidence." – Rahul
   </blockquote>
-</section> 
+</section>
+
+
+<section>
+  <h2>Explore Categories</h2>
+
+  <ul>
+    <li>Science & Technology</li>
+    <li>Mathematics</li>
+    <li>Programming</li>
+    <li>General Knowledge</li>
+  </ul>
+</section>
