@@ -18,7 +18,11 @@ export default function HomePortal() {
    
     <section>
      <h2>Learn Better Every Day</h2>
-   </section>
+   
+     <p>
+       Interactive educational platform designed for students.
+     </p>
+     </section>
     </div>
   );
 }
