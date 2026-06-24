@@ -9,6 +9,7 @@ export default function HomePortal() {
      <nav>
       <ul>
          <li>Home</li>
+         <li>Courses</li>
       </ul>
      </nav>   
    </div>
