@@ -6,3 +6,5 @@ import type { UserProfile } from "@/app/page"
 interface DashboardProps {
   userProfile: UserProfile
 }
+export function Dashboard({ userProfile }: DashboardProps) {
+}
