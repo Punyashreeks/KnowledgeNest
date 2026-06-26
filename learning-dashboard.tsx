@@ -10,3 +10,6 @@ export function Dashboard({ userProfile }: DashboardProps) {
 }
 const [selectedSubject, setSelectedSubject] = useState(null)
 return <div></div>
+return (
+  <div></div>
+)
