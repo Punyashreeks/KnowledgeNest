@@ -13,3 +13,6 @@ import { useLanguage } from "@/lib/language-context"
 interface DashboardProps {
   userProfile: UserProfile
 }
+
+export function Dashboard({ userProfile }: DashboardProps) {
+  const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null)
