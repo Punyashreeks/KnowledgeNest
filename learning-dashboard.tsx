@@ -16,3 +16,5 @@ interface DashboardProps {
 
 export function Dashboard({ userProfile }: DashboardProps) {
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null)
+  const { t } = useLanguage()
+
