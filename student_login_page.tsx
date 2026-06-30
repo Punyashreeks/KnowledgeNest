@@ -28,3 +28,8 @@ export default function HomePage() {
 
    useEffect(() => {
     // Only redirect after component is mounted and auth loading is complete
+
+    if (mounted && !loading && !isAuthenticated) {
+      router.push("/login")
+    }
+  }, [isAuthenticated, loading, router, mounted])
