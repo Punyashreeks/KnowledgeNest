@@ -85,3 +85,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setError(errorMessage)
       console.error("Registration error:", errorMessage)
     } finally {
+      setIsLoading(false)
+    }
+  }
