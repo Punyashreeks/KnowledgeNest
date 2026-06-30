@@ -113,3 +113,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
 	    <Label htmlFor="name">Full Name</Label>
               <Input
+	       id="name"
+                name="name"
