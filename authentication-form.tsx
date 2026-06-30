@@ -119,3 +119,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                 placeholder="John Doe"
 		value={formData.name}
                 onChange={handleChange}
+		required
+              />
