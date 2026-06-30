@@ -97,3 +97,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         </CardTitle>
 	</CardHeader>
       <CardContent>
+       <form
+          onSubmit={tab === "login" ? handleLogin : handleRegister}
