@@ -10,3 +10,6 @@ import type { UserProfile } from "@/app/page"
 import type { Subject } from "@/lib/education-data"
 import { SubjectView } from "@/components/subject-view"
 import { useLanguage } from "@/lib/language-context"
+interface DashboardProps {
+  userProfile: UserProfile
+}
