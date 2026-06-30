@@ -13,3 +13,5 @@ export const metadata: Metadata = {
 	description: 'Created with humans',
 	generator: 'v0.app',
 }
+
+export default function RootLayout({
