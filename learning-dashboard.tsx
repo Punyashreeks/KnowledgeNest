@@ -43,3 +43,4 @@ export function Dashboard({ userProfile }: DashboardProps) {
 	      className="group cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 hover:border-primary/50 animate-bounce-gentle rounded-2xl border-popover-foreground border-dotted"
               onClick={() => setSelectedSubject(subject)}
             >
+	      <CardHeader className="text-center pb-4 rounded-2xl shadow-lg">
