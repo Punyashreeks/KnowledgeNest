@@ -50,3 +50,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       // Call onSuccess callback (which will redirect)
 	onSuccess?.()
     } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : "Login failed"
+      setError(errorMessage)
