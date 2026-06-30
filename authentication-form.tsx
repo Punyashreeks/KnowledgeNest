@@ -93,4 +93,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     <Card className="w-full max-w-md mx-auto">
      <CardHeader>
         <CardTitle>
-	   
+            {tab === "login" ? "Sign In" : "Create Account"}
+        </CardTitle>
