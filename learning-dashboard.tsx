@@ -51,3 +51,9 @@ export function Dashboard({ userProfile }: DashboardProps) {
 		<CardDescription className="text-base">{subject.description}</CardDescription>
               </CardHeader>
               <CardContent>
+	       <Button
+                  className="w-full group-hover:animate-pulse-glow rounded-2xl shadow-xl border-card-foreground border-solid"
+                  size="lg"
+                >
+                  Start Learning
+                </Button>
