@@ -12,3 +12,4 @@ export const metadata: Metadata = {
 	title: 'v0 App',
 	description: 'Created with humans',
 	generator: 'v0.app',
+}
