@@ -21,3 +21,7 @@ export default function HomePage() {
   const { isAuthenticated, loading } = useAuth()
   const router = useRouter()
   const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
