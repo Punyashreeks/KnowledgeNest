@@ -40,3 +40,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
     try {
       await login(formData.email, formData.password)
+      // Clear form data after successful login
+      setFormData({
