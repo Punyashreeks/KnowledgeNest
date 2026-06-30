@@ -64,7 +64,11 @@ export default function HomePage() {
 
       {!userProfile?.completedOnboarding ? (
         <OnboardingFlow onComplete={handleOnboardingComplete} />
-      ) : (
+       ) : (
         <Dashboard userProfile={userProfile} />
-      )}
+       )}
+     </div>
+  )
+}
+
 
