@@ -9,3 +9,4 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
  
 export const metadata: Metadata = {
+	title: 'v0 App',
