@@ -73,3 +73,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       await registerUser(formData.email, formData.name, formData.password)
       // Clear form data after successful registration
       setFormData({
+	email: "",
+        password: "",
