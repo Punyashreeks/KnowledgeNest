@@ -4,51 +4,96 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ArrowLeft, CheckCircle, XCircle } from "lucide-react"
+import { ArrowLeft, CheckCircle, XCircle, Lightbulb } from "lucide-react"
 
-interface NumberPatternGameProps {
+interface WordScrambleGameProps {
   onBack: () => void
 }
 
-interface Pattern {
-  sequence: number[]
-  answer: number
-  rule: string
+interface ScrambleWord {
+  word: string
+  scrambled: string
+  hint: string
+  category: string
 }
 
-export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
-  const [currentPattern, setCurrentPattern] = useState<Pattern | null>(null)
+export function WordScrambleGame({ onBack }: WordScrambleGameProps) {
+  const [currentWord, setCurrentWord] = useState<ScrambleWord | null>(null)
   const [userAnswer, setUserAnswer] = useState("")
   const [score, setScore] = useState(0)
   const [attempts, setAttempts] = useState(0)
   const [showResult, setShowResult] = useState(false)
   const [isCorrect, setIsCorrect] = useState(false)
+  const [showHint, setShowHint] = useState(false)
 
-  const patterns: Pattern[] = [
-    { sequence: [2, 4, 6, 8], answer: 10, rule: "Add 2 each time" },
-    { sequence: [1, 3, 5, 7], answer: 9, rule: "Add 2 each time (odd numbers)" },
-    { sequence: [5, 10, 15, 20], answer: 25, rule: "Add 5 each time" },
-    { sequence: [1, 4, 7, 10], answer: 13, rule: "Add 3 each time" },
-    { sequence: [2, 6, 18, 54], answer: 162, rule: "Multiply by 3 each time" },
-    { sequence: [100, 90, 80, 70], answer: 60, rule: "Subtract 10 each time" },
+  const words: ScrambleWord[] = [
+    {
+      word: "PHOTOSYNTHESIS",
+      scrambled: "HPOTOSYNTHESIS",
+      hint: "Process by which plants make food using sunlight",
+      category: "Biology",
+    },
+    {
+      word: "GRAVITY",
+      scrambled: "VITYRAG",
+      hint: "Force that pulls objects toward Earth",
+      category: "Physics",
+    },
+    {
+      word: "MOLECULE",
+      scrambled: "CELUMEOL",
+      hint: "Smallest unit of a chemical compound",
+      category: "Chemistry",
+    },
+    {
+      word: "TRIANGLE",
+      scrambled: "GLETRAIN",
+      hint: "Shape with three sides and three angles",
+      category: "Mathematics",
+    },
+    {
+      word: "ELECTRON",
+      scrambled: "TRONELEC",
+      hint: "Negatively charged particle in an atom",
+      category: "Chemistry",
+    },
+    {
+      word: "FRACTION",
+      scrambled: "TIONFARC",
+      hint: "Part of a whole number",
+      category: "Mathematics",
+    },
   ]
 
-  const generateNewPattern = () => {
-    const randomPattern = patterns[Math.floor(Math.random() * patterns.length)]
-    setCurrentPattern(randomPattern)
+  const scrambleWord = (word: string): string => {
+    const letters = word.split("")
+    for (let i = letters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
+      ;[letters[i], letters[j]] = [letters[j], letters[i]]
+    }
+    return letters.join("")
+  }
+
+  const generateNewWord = () => {
+    const randomWord = words[Math.floor(Math.random() * words.length)]
+    const newScrambled = scrambleWord(randomWord.word)
+    setCurrentWord({
+      ...randomWord,
+      scrambled: newScrambled,
+    })
     setUserAnswer("")
     setShowResult(false)
+    setShowHint(false)
   }
 
   useEffect(() => {
-    generateNewPattern()
+    generateNewWord()
   }, [])
 
   const handleSubmit = () => {
-    if (!currentPattern || userAnswer === "") return
+    if (!currentWord || userAnswer === "") return
 
-    const userNum = Number.parseInt(userAnswer)
-    const correct = userNum === currentPattern.answer
+    const correct = userAnswer.toUpperCase() === currentWord.word.toUpperCase()
     setIsCorrect(correct)
     setShowResult(true)
     setAttempts(attempts + 1)
@@ -59,10 +104,10 @@ export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
   }
 
   const handleNext = () => {
-    generateNewPattern()
+    generateNewWord()
   }
 
-  if (!currentPattern) return null
+  if (!currentWord) return null
 
   return (
     <div className="min-h-screen p-4 pt-20">
@@ -73,8 +118,8 @@ export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
             <ArrowLeft className="h-4 w-4" />
           </Button>
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-primary">Number Pattern Puzzle</h1>
-            <p className="text-muted-foreground">Find the missing number in the sequence</p>
+            <h1 className="text-3xl font-bold text-primary">Word Scramble</h1>
+            <p className="text-muted-foreground">Unscramble the scientific terms</p>
           </div>
           <div className="text-right">
             <div className="text-2xl font-bold text-primary">{score}</div>
@@ -85,26 +130,40 @@ export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
         {/* Game Card */}
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle className="text-center">What comes next?</CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle className="text-center flex-1">Unscramble this word:</CardTitle>
+              <Button variant="outline" size="sm" onClick={() => setShowHint(!showHint)}>
+                <Lightbulb className="h-4 w-4 mr-2" />
+                Hint
+              </Button>
+            </div>
           </CardHeader>
           <CardContent>
-            {/* Pattern Display */}
-            <div className="flex items-center justify-center gap-4 mb-8">
-              {currentPattern.sequence.map((num, index) => (
-                <div key={index} className="flex items-center">
-                  <div className="w-16 h-16 bg-primary text-primary-foreground rounded-lg flex items-center justify-center text-xl font-bold">
-                    {num}
-                  </div>
-                  {index < currentPattern.sequence.length - 1 && (
-                    <div className="mx-2 text-2xl text-muted-foreground">→</div>
-                  )}
-                </div>
-              ))}
-              <div className="mx-2 text-2xl text-muted-foreground">→</div>
-              <div className="w-16 h-16 bg-muted border-2 border-dashed border-primary rounded-lg flex items-center justify-center text-2xl font-bold text-primary">
-                ?
-              </div>
+            {/* Category Badge */}
+            <div className="text-center mb-4">
+              <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                {currentWord.category}
+              </span>
             </div>
+
+            {/* Scrambled Word Display */}
+            <div className="text-center mb-8">
+              <div className="text-4xl font-bold text-primary tracking-wider mb-4 font-mono">
+                {currentWord.scrambled}
+              </div>
+              <div className="text-sm text-muted-foreground">({currentWord.word.length} letters)</div>
+            </div>
+
+            {/* Hint */}
+            {showHint && (
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
+                <div className="flex items-center gap-2 text-yellow-700">
+                  <Lightbulb className="h-4 w-4" />
+                  <span className="font-medium">Hint:</span>
+                </div>
+                <p className="text-yellow-600 mt-1">{currentWord.hint}</p>
+              </div>
+            )}
 
             {/* Input Section */}
             {!showResult && (
@@ -112,11 +171,11 @@ export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
                 <div>
                   <label className="block text-sm font-medium mb-2">Your answer:</label>
                   <Input
-                    type="number"
+                    type="text"
                     value={userAnswer}
                     onChange={(e) => setUserAnswer(e.target.value)}
-                    className="w-32 text-center text-xl"
-                    placeholder="?"
+                    className="w-64 text-center text-xl uppercase"
+                    placeholder="Enter the word..."
                     autoFocus
                   />
                 </div>
@@ -136,12 +195,12 @@ export function NumberPatternGame({ onBack }: NumberPatternGameProps) {
                     <XCircle className="h-8 w-8 text-red-500" />
                   )}
                   <span className="text-2xl font-bold">
-                    {isCorrect ? "Correct!" : `Incorrect! The answer was ${currentPattern.answer}`}
+                    {isCorrect ? "Correct!" : `Incorrect! The word was "${currentWord.word}"`}
                   </span>
                 </div>
-                <p className="text-muted-foreground mb-6">Pattern rule: {currentPattern.rule}</p>
+                <p className="text-muted-foreground mb-6">{currentWord.hint}</p>
                 <Button onClick={handleNext} size="lg" className="animate-pulse-glow">
-                  Next Pattern
+                  Next Word
                 </Button>
               </div>
             )}
