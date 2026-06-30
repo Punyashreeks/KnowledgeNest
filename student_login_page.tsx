@@ -13,5 +13,8 @@ export interface UserProfile {
    age: number
    classLevel: number
    reason: string
-    completedOnboarding: boolean
+   completedOnboarding: boolean
 }
+
+export default function HomePage() {
+  const [userProfile, setUserProfile] = useState<UserProfile | null>(null)
