@@ -110,3 +110,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
 	     {tab === "register" && (
             <div className="space-y-2">
+
+	    <Label htmlFor="name">Full Name</Label>
+              <Input
