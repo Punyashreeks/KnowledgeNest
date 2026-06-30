@@ -130,3 +130,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               id="email"
 	      name="email"
               type="email"
+	      placeholder="you@example.com"
+              value={formData.email}
