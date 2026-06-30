@@ -68,3 +68,6 @@ export function Dashboard({ userProfile }: DashboardProps) {
 	    <h2 className="text-2xl font-bold text-primary mb-4">&quot;{t("learningGoal")}&quot;</h2>
 	    <p className="text-lg text-muted-foreground italic rounded-2xl">"{userProfile.reason}"</p>
 	    <div className="mt-6 flex justify-center gap-4">
+	    <Badge variant="outline" className="text-sm px-4 py-2 rounded-2xl border-foreground text-left font-serif shadow-xl">
+                  {t("interactiveNotes")}
+                </Badge>
