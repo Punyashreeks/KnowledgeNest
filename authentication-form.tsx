@@ -23,4 +23,5 @@ export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
 		 email: "",
 		  name: "",
 		  confirmPassword: "",
+          })
 
