@@ -171,5 +171,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               ? "Loading..."
 	       : tab === "login"
                 ? "Sign In"
+		 : "Create Account"}
+          </Button>
 
 
