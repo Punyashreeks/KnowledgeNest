@@ -27,3 +27,4 @@ export function Dashboard({ userProfile }: DashboardProps) {
 
   return (
     <div className="min-h-screen p-4 pt-20">
+     <div className="max-w-6xl mx-auto font-serif">
