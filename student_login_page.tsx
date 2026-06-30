@@ -37,3 +37,7 @@ export default function HomePage() {
   const handleOnboardingComplete = (profile: UserProfile) => {
     setUserProfile({ ...profile, completedOnboarding: true })
   }
+
+   if (!mounted || loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
