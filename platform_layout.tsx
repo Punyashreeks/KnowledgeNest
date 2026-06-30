@@ -7,3 +7,5 @@ import './globals.css'
 import { LanguageProvider } from '@/lib/language-context'
 import { ThemeProvider } from '@/components/theme-provider'
 import { AuthProvider } from '@/lib/auth-context'
+ 
+export const metadata: Metadata = {
