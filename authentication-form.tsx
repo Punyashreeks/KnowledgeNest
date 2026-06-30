@@ -52,3 +52,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : "Login failed"
       setError(errorMessage)
+      console.error("Login error:", errorMessage)
+    } finally {
