@@ -62,3 +62,9 @@ export default function HomePage() {
       <TopRightHeader />
       <WelcomeHeader userName={userProfile?.name} />
 
+      {!userProfile?.completedOnboarding ? (
+        <OnboardingFlow onComplete={handleOnboardingComplete} />
+      ) : (
+        <Dashboard userProfile={userProfile} />
+      )}
+
