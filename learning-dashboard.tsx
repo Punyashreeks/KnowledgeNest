@@ -19,3 +19,5 @@ export function Dashboard({ userProfile }: DashboardProps) {
   const { t } = useLanguage()
 
   const subjectGroup = userProfile.classLevel <= 8 ? "6-8" : "9-12"
+  const availableSubjects = SUBJECTS_BY_CLASS[subjectGroup]
+
