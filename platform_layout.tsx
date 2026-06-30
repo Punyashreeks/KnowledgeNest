@@ -25,3 +25,4 @@ export default function RootLayout({
 	   <ThemeProvider attribute="class" defaultTheme="light" enableSystemo>
 	     <AuthProvider>
 	       <LanguageProvider>
+	          {children}
