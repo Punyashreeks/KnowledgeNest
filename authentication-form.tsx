@@ -181,5 +181,8 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 	      Don't have an account?{" "}
                 <button
                   type="button"
+		   onClick={() => {
+                    setTab("register")
+                    setError("")
 
 
