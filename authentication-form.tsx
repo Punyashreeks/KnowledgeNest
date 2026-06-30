@@ -192,5 +192,12 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               </>
             ) : (
               <>
+	        Already have an account?{" "}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setTab("login")
+                    setError("")
+                  }}
 
 
