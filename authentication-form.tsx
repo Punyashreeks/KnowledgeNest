@@ -132,3 +132,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               type="email"
 	      placeholder="you@example.com"
               value={formData.email}
+	      onChange={handleChange}
+              required
