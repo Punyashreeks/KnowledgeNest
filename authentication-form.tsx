@@ -128,3 +128,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             <Label htmlFor="email">Email</Label>
 	    <Input
               id="email"
+	      name="email"
+              type="email"
