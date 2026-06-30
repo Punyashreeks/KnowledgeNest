@@ -83,3 +83,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     } catch (err) {
 	    const errorMessage = err instanceof Error ? err.message : "Registration failed"
       setError(errorMessage)
+      console.error("Registration error:", errorMessage)
+    } finally {
