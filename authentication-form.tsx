@@ -106,3 +106,4 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               <AlertCircle className="h-4 w-4" />
 	      <span>{error}</span>
             </div>
+	     )}
