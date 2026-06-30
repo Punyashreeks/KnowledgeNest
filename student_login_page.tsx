@@ -10,3 +10,4 @@ import { UserProfile } from "@/components/user-profile"
 
 export interface UserProfile {
   name: string
+   age: number
