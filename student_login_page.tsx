@@ -57,4 +57,6 @@ export default function HomePage() {
   return (
     <div className="min-h-screen relative">
       <div className="mb-4">
+       <UserProfile />
+      </div>
 
