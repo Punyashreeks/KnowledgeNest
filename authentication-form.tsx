@@ -95,3 +95,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         <CardTitle>
             {tab === "login" ? "Sign In" : "Create Account"}
         </CardTitle>
+	</CardHeader>
+      <CardContent>
