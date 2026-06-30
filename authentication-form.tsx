@@ -107,3 +107,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 	      <span>{error}</span>
             </div>
 	     )}
+
+	     {tab === "register" && (
+            <div className="space-y-2">
