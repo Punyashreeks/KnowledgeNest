@@ -154,4 +154,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             <div className="space-y-2">
 	    <Label htmlFor="confirmPassword">Confirm Password</Label>
               <Input
+	      id="confirmPassword"
+              name="confirmPassword"
 
