@@ -66,3 +66,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setError("Passwords do not match")
       return
     }
+
+    setIsLoading(true)
