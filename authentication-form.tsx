@@ -36,3 +36,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault()
     setError("")
     setIsLoading(true)
+
+
+    try {
+      await login(formData.email, formData.password)
