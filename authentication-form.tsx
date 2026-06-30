@@ -150,3 +150,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             />
           </div>
 
+	  {tab === "register" && (
+            <div className="space-y-2">
+
