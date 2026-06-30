@@ -123,3 +123,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               />
 	      </div>
           )}
+
+	  <div className="space-y-2">
+            <Label htmlFor="email">Email</Label>
