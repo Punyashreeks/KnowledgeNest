@@ -26,4 +26,6 @@ export default function RootLayout({
 	     <AuthProvider>
 	       <LanguageProvider>
 	          {children}
-	       <Analytics />
+	         <Analytics />
+	       </LanguageProvider>
+
