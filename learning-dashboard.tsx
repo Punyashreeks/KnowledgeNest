@@ -77,4 +77,12 @@ export function Dashboard({ userProfile }: DashboardProps) {
 		<Badge variant="outline" className="text-sm px-4 py-2 rounded-4xl shadow-xl border-foreground">
                   {t("funGames")}
                 </Badge>
+		</div>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  )
+}
 
