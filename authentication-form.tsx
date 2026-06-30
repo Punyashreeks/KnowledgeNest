@@ -134,3 +134,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               value={formData.email}
 	      onChange={handleChange}
               required
+	      />
+          </div>
