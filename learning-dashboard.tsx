@@ -30,3 +30,4 @@ export function Dashboard({ userProfile }: DashboardProps) {
      <div className="max-w-6xl mx-auto font-serif">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-primary mb-4">{t("chooseSubject")}</h1>
+	<p className="text-lg text-muted-foreground mb-2">{t("selectSubject")}</p>
