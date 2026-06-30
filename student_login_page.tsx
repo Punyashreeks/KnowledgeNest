@@ -25,3 +25,6 @@ export default function HomePage() {
   useEffect(() => {
     setMounted(true)
   }, [])
+
+   useEffect(() => {
+    // Only redirect after component is mounted and auth loading is complete
