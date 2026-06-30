@@ -46,3 +46,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         password: "",
 	name: "",
         confirmPassword: "",
+	})
+      // Call onSuccess callback (which will redirect)
