@@ -59,4 +59,6 @@ export default function HomePage() {
       <div className="mb-4">
        <UserProfile />
       </div>
+      <TopRightHeader />
+      <WelcomeHeader userName={userProfile?.name} />
 
