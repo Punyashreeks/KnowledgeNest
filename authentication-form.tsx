@@ -30,3 +30,8 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 	 const { name, value } = e.target
          setFormData((prev) => ({ ...prev, [name]: value }))
 }
+
+
+ const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setError("")
