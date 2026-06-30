@@ -88,3 +88,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setIsLoading(false)
     }
   }
+
+  return (
+    <Card className="w-full max-w-md mx-auto">
