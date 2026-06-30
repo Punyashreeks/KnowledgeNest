@@ -57,3 +57,7 @@ export function Dashboard({ userProfile }: DashboardProps) {
                 >
                   Start Learning
                 </Button>
+		 </CardContent>
+            </Card>
+          ))}
+        </div>
