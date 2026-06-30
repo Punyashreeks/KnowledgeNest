@@ -19,3 +19,4 @@ export interface UserProfile {
 export default function HomePage() {
   const [userProfile, setUserProfile] = useState<UserProfile | null>(null)
   const { isAuthenticated, loading } = useAuth()
+  const router = useRouter()
