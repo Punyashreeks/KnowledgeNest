@@ -42,3 +42,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       await login(formData.email, formData.password)
       // Clear form data after successful login
       setFormData({
+	email: "",
+        password: "",
