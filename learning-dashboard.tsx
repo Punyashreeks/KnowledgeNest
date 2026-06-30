@@ -47,3 +47,4 @@ export function Dashboard({ userProfile }: DashboardProps) {
 	       <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
                   {subject.icon}
                 </div>
+		<CardTitle className="text-2xl group-hover:text-primary transition-colors">{subject.name}</CardTitle>
