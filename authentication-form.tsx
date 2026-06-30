@@ -115,3 +115,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               <Input
 	       id="name"
                 name="name"
+		type="text"
+                placeholder="John Doe"
