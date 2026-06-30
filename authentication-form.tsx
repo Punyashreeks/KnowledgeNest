@@ -13,4 +13,4 @@ interface LoginFormProps {
 	 defaultTab?: "login" | "register"
 }
 
-
+export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
