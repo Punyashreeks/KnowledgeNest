@@ -99,3 +99,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       <CardContent>
        <form
           onSubmit={tab === "login" ? handleLogin : handleRegister}
+	  className="space-y-4"
+        >
+          {error && (
