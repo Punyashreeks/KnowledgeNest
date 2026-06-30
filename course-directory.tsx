@@ -6,3 +6,5 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, BookOpen, Brain, Gamepad2 } from "lucide-react"
 import { TOPICS_BY_SUBJECT } from "@/lib/education-data"
+import type { Subject, Topic } from "@/lib/education-data"
+import type { UserProfile } from "@/app/page"
