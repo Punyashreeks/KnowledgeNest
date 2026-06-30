@@ -13,3 +13,5 @@ export interface UserProfile {
    age: number
    classLevel: number
    reason: string
+    completedOnboarding: boolean
+}
