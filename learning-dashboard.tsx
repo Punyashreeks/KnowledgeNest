@@ -6,3 +6,4 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle }from "@/comp
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { SUBJECTS_BY_CLASS } from "@/lib/education-data"
+import type { UserProfile } from "@/app/page"
