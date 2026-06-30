@@ -64,3 +64,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
      if (formData.password !== formData.confirmPassword) {
       setError("Passwords do not match")
+      return
+    }
