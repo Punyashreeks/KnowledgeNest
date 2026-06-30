@@ -71,3 +71,7 @@ export function Dashboard({ userProfile }: DashboardProps) {
 	    <Badge variant="outline" className="text-sm px-4 py-2 rounded-2xl border-foreground text-left font-serif shadow-xl">
                   {t("interactiveNotes")}
                 </Badge>
+		<Badge variant="outline" className="text-sm px-4 py-2 rounded-2xl shadow-xl border-foreground">
+                  {t("smartQuizzes")}
+                </Badge>
+
