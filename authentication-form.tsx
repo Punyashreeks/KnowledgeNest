@@ -199,5 +199,9 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                     setTab("login")
                     setError("")
                   }}
+		  className="text-blue-600 hover:underline"
+                >
+                  Sign in
+                </button>
 
 
