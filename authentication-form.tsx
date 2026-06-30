@@ -44,3 +44,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setFormData({
 	email: "",
         password: "",
+	name: "",
+        confirmPassword: "",
