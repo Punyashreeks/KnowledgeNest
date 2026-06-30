@@ -158,4 +158,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               name="confirmPassword"
 	      type="password"
               placeholder="••••••••"
+	      value={formData.confirmPassword}
+              onChange={handleChange}
+
 
