@@ -29,3 +29,5 @@ export default function RootLayout({
 	         <Analytics />
 	       </LanguageProvider>
              </AuthProvider>
+	    </ThemeProvider>
+
