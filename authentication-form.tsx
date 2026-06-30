@@ -57,3 +57,7 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
      setIsLoading(false)
     }
    }
+
+   const handleRegister = async (e: React.FormEvent) => {
+    e.preventDefault()
+
