@@ -184,5 +184,13 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		   onClick={() => {
                     setTab("register")
                     setError("")
+		     }}
+                  className="text-blue-600 hover:underline"
+                >
+                  Sign up
+                </button>
+              </>
+            ) : (
+              <>
 
 
