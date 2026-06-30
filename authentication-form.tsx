@@ -17,3 +17,4 @@ export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
 	 const { login, register: registerUser } = useAuth()
 	 const [isLoading, setIsLoading] = useState(false)
 	 const [error, setError] = useState<string>("")
+	 const [tab, setTab] = useState<"login" | "register">(defaultTab)
