@@ -44,3 +44,6 @@ export function Dashboard({ userProfile }: DashboardProps) {
               onClick={() => setSelectedSubject(subject)}
             >
 	      <CardHeader className="text-center pb-4 rounded-2xl shadow-lg">
+	       <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {subject.icon}
+                </div>
