@@ -22,6 +22,8 @@ export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
 	 const [formData, setFormData] = useState({
 		 email: "",
 		  name: "",
-		  confirmPassword: "",
-          })
+		  confirmPassword:"",
+})
+
+const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 
