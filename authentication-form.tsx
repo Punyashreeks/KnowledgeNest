@@ -117,3 +117,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                 name="name"
 		type="text"
                 placeholder="John Doe"
+		value={formData.name}
+                onChange={handleChange}
