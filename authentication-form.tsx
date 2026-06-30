@@ -68,3 +68,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     }
 
     setIsLoading(true)
+
+    try {
+      await registerUser(formData.email, formData.name, formData.password)
