@@ -14,3 +14,4 @@ interface LoginFormProps {
 }
 
 export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
+	 const { login, register: registerUser } = useAuth()
