@@ -6,3 +6,5 @@ import { useAuth } from "@/lib/auth-context"
 import { WelcomeHeader, TopRightHeader } from "@/components/welcome-header"
 import { OnboardingFlow } from "@/components/onboarding-flow"
 import { Dashboard } from "@/components/dashboard"
+import { UserProfile } from "@/components/user-profile"
+
