@@ -173,5 +173,10 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
                 ? "Sign In"
 		 : "Create Account"}
           </Button>
+	  
+
+	  <div className="text-center text-sm">
+            {tab === "login" ? (
+              <>
 
 
