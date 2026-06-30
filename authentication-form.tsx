@@ -141,3 +141,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
             <Label htmlFor="password">Password</Label>
 	    <Input
               id="password"
+	      name="password"
+              type="password"
