@@ -20,3 +20,4 @@ export function LoginForm({ onSuccess, defaultTab = "login" }: LoginFormProps) {
 	 const [tab, setTab] = useState<"login" | "register">(defaultTab)
 
 	 const [formData, setFormData] = useState({
+		 email: "",
