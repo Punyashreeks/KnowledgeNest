@@ -33,3 +33,7 @@ export default function HomePage() {
       router.push("/login")
     }
   }, [isAuthenticated, loading, router, mounted])
+
+  const handleOnboardingComplete = (profile: UserProfile) => {
+    setUserProfile({ ...profile, completedOnboarding: true })
+  }
