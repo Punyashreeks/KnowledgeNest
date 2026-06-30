@@ -54,3 +54,5 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       setError(errorMessage)
       console.error("Login error:", errorMessage)
     } finally {
+     setIsLoading(false)
+    }
