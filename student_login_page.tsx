@@ -48,4 +48,9 @@ export default function HomePage() {
         </div>
       </div>
     )
-  } 
+  }
+
+  if (!isAuthenticated) {
+    return null
+  }
+
