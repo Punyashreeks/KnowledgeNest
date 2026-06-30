@@ -61,3 +61,7 @@ export function Dashboard({ userProfile }: DashboardProps) {
             </Card>
           ))}
         </div>
+
+	<div className="mt-16 text-center">
+          <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+            <CardContent className="p-8">
