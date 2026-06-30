@@ -12,3 +12,4 @@ export interface UserProfile {
   name: string
    age: number
    classLevel: number
+   reason: string
