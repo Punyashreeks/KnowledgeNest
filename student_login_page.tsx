@@ -8,3 +8,5 @@ import { OnboardingFlow } from "@/components/onboarding-flow"
 import { Dashboard } from "@/components/dashboard"
 import { UserProfile } from "@/components/user-profile"
 
+export interface UserProfile {
+  name: string
