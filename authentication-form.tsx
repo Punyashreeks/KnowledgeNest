@@ -11,3 +11,4 @@ import { AlertCircle } from "lucide-react"
 interface LoginFormProps {
 	 onSuccess?: () => void
 	 defaultTab?: "login" | "register"
+}
