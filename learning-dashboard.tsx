@@ -31,3 +31,7 @@ export function Dashboard({ userProfile }: DashboardProps) {
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-primary mb-4">{t("chooseSubject")}</h1>
 	<p className="text-lg text-muted-foreground mb-2">{t("selectSubject")}</p>
+	<Badge variant="secondary" className="text-sm">
+            {t("class")} {userProfile.classLevel} • {t("age")} {userProfile.age}
+          </Badge>
+        </div>
