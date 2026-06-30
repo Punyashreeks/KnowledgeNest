@@ -24,3 +24,6 @@ export function Dashboard({ userProfile }: DashboardProps) {
   if (selectedSubject) {
     return <SubjectView subject={selectedSubject} userProfile={userProfile} onBack={() => setSelectedSubject(null)} />
   }
+
+  return (
+    <div className="min-h-screen p-4 pt-20">
