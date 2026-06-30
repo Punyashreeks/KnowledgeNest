@@ -136,3 +136,6 @@ const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
               required
 	      />
           </div>
+
+	  <div className="space-y-2">
+            <Label htmlFor="password">Password</Label>
