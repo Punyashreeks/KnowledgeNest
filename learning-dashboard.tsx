@@ -38,3 +38,5 @@ export function Dashboard({ userProfile }: DashboardProps) {
 
 	<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {availableSubjects.map((subject) => (
+	    <Card
+              key={subject.id}
