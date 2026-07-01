@@ -1,4 +1,4 @@
-🎓 EDULIN – Frontend & User Interface Module
+🎓 KNOWLEDGENEST – Frontend & User Interface Module
 Next.js React TypeScript TailwindCSS Responsive UI
 🎨 Interactive Frontend & User Experience
 For the EDULIN Educational Learning Platform
