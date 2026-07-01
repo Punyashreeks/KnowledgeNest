@@ -1,378 +1,185 @@
-<div align="center">
-
-# 📚 KnowledgeNest
-
-### *An Interactive Gamified Learning Platform for Personalized Education*
-
-<p>
-A modern web-based learning platform that enhances the educational experience through
-interactive learning, personalized content, multilingual accessibility, and gamification.
-</p>
-
-<img src="images/banner.png" alt="KnowledgeNest Banner" width="100%">
-
-<br>
-
-![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css)
-![GitHub](https://img.shields.io/badge/GitHub-Version_Control-181717?style=for-the-badge&logo=github)
-
-</div>
-
----
-
-# 📖 Overview
-
-KnowledgeNest is an interactive learning platform designed to make education engaging, organized, and enjoyable. The platform combines structured learning modules, assessments, multilingual accessibility, gamified activities, and a modern responsive interface to improve the overall learning experience.
-
-The project follows a modular Git workflow, where each major feature is developed in an independent branch before being merged into the main branch.
-
----
-
-# 🎯 Objectives
-
-- Make learning interactive
-- Improve student engagement
-- Organize educational content efficiently
-- Support multilingual learning
-- Create a clean and modern learning environment
-- Encourage learning through gamification
-
----
-
-# ✨ Features
-
-## 🔐 Authentication
-
-- User Login
-- Secure Authentication
-- Session Handling
-
----
-
-## 📚 Learning Dashboard
-
-- Personalized Dashboard
-- Continue Learning
-- Progress Overview
-
----
-
-## 📖 Course Directory
-
-- Browse Courses
-- Organized Learning Modules
-- Easy Navigation
-
----
-
-## 📝 Assessment Dashboard
-
-- Interactive Assessments
-- Quiz Interface
-- Performance Tracking
-
----
-
-## 🎮 Gamified Learning
-
-- Educational Games
-- Interactive Activities
-- Engaging Learning Experience
-
----
-
-## 🌍 Language Support
-
-- Language Preferences
-- Translation Center
-- Improved Accessibility
-
----
-
-## 🎨 Visual Design System
-
-- Responsive Layout
-- Dark / Light Theme
-- Modern UI Components
-- Consistent Design Language
-
----
-
-# 🏗 Repository Structure
-
-```text
-KnowledgeNest
+🎓 EDULIN – Frontend & User Interface Module
+Next.js React TypeScript TailwindCSS Responsive UI
+🎨 Interactive Frontend & User Experience
+For the EDULIN Educational Learning Platform
+________________________________________
+📖 Overview
+The Frontend & User Interface Module provides students with an engaging, interactive, and responsive learning experience.
+This module focuses on delivering an intuitive interface that allows students to:
+•	📚 Learn subjects interactively
+•	📝 Attempt quizzes
+•	🌍 Access multilingual content
+•	🎮 Play educational games
+•	👤 Manage user profiles
+•	🌙 Switch themes for better accessibility
+________________________________________
+🏗️ Frontend Architecture
+graph LR
+Student --> HomePage
+HomePage --> Dashboard
+Dashboard --> Subjects
+Subjects --> Topics
+Topics --> Notes
+Notes --> Quiz
+Quiz --> Games
+Games --> Profile
+________________________________________
+📂 Module Structure
+App Pages/
 │
-├── master (Application Pages)
+├── page.tsx
+├── login/page.tsx
+└── layout.tsx
+
+Components/
 │
-├── learning-core
-│   │
-│   ├── learner-personalization
-│   └── learner-experience
+├── dashboard.tsx
+├── login-form.tsx
+├── onboarding-flow.tsx
+├── subject-view.tsx
+├── topic-view.tsx
+├── quiz-view.tsx
+├── translate-view.tsx
+├── user-profile.tsx
+├── welcome-header.tsx
+├── language-selector.tsx
+├── theme-provider.tsx
+└── theme-toggle.tsx
+
+Educational Games/
 │
-├── gamified-learning
+├── games-view.tsx
+├── memory-game.tsx
+├── number-pattern-game.tsx
+└── word-scramble-game.tsx
+
+Assets/
 │
-└── visual-design-system
-```
-
----
-
-# 🌿 Branch Organization
-
-| Branch | Description |
-|---------|-------------|
-| **master** | Main application branch containing integrated pages and stable code |
-| **learning-core** | Core learning modules and educational functionality |
-| **learner-personalization** | Personalized learning experiences and student-specific features |
-| **learner-experience** | User experience improvements, dashboard, onboarding, and navigation |
-| **gamified-learning** | Interactive educational games and engagement features |
-| **visual-design-system** | UI styling, themes, assets, and design consistency |
-
----
-
-# 🏛 System Architecture
-
-```text
-                      Student
-                          │
-                          ▼
-                  Authentication
-                          │
-                          ▼
-                  Learning Dashboard
-          ┌──────────────┼───────────────┐
-          │              │               │
-          ▼              ▼               ▼
-    Course Directory  Assessments  Learning Games
-          │              │               │
-          └──────────────┼───────────────┘
-                         ▼
-              Language Preferences
-                         │
-                         ▼
-                 Theme Management
-```
-
----
-
-# 📂 Project Structure
-
-```text
-KnowledgeNest/
-│
-├── app_pages/
-├── images/
-├── public/
-├── styles/
-│
-├── authentication-form.tsx
-├── learning-dashboard.tsx
-├── assessment-dashboard.tsx
-├── course-directory.tsx
-├── learning-games-hub.tsx
-├── language-preferences.tsx
-├── language-translation-center.tsx
-├── appearance-manager.tsx
-├── eduportal-theme.css
-│
-├── package.json
-├── tsconfig.json
-└── README.md
-```
-
----
-
-# 🛠 Tech Stack
-
-### Frontend
-
-- Next.js
-- React
-- TypeScript
-
-### Styling
-
-- Tailwind CSS
-- CSS3
-- Next Themes
-
-### Development Tools
-
-- Git
-- GitHub
-- VS Code
-
----
-
-# 📸 Application Preview
-
-## 🔐 Login
-
-<img src="images/login.png" width="900">
-
----
-
-## 🏠 Learning Dashboard
-
-<img src="images/dashboard.png" width="900">
-
----
-
-## 📖 Course Directory
-
-<img src="images/course-directory.png" width="900">
-
----
-
-## 📝 Assessment Dashboard
-
-<img src="images/assessment-dashboard.png" width="900">
-
----
-
-## 🎮 Learning Games
-
-<img src="images/games.png" width="900">
-
----
-
-## 🌍 Language Translation
-
-<img src="images/language.png" width="900">
-
----
-
-## 🌙 Dark Theme
-
-<img src="images/dark-theme.png" width="900">
-
----
-
-# 🚀 Getting Started
-
-Clone the repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/KnowledgeNest.git
-```
-
-Move into the project
-
-```bash
-cd KnowledgeNest
-```
-
-Install dependencies
-
-```bash
-npm install
-```
-
-Run the development server
-
-```bash
-npm run dev
-```
-
-Visit
-
-```
-http://localhost:3000
-```
-
----
-
-# 📈 Development Workflow
-
-```text
-Feature Development
-        │
-        ▼
-Create Feature Branch
-        │
-        ▼
-Implement Feature
-        │
-        ▼
-Commit Changes
-        │
-        ▼
-Push Branch
-        │
-        ▼
-Create Pull Request
-        │
-        ▼
-Review & Merge
-        │
-        ▼
-Master Branch
-```
-
----
-
-# 🚀 Future Enhancements
-
-- AI Learning Assistant
-- Student Progress Analytics
-- Achievement Badges
-- Leaderboard
-- Teacher Dashboard
-- Parent Dashboard
-- Live Classroom Support
-- Notes & Bookmarking
-- Certificates
-
----
-
-# 📌 Highlights
-
-- 📚 Modular Architecture
-- 🎮 Gamified Learning
-- 🌍 Multilingual Support
-- 📱 Responsive Design
-- 🎨 Modern UI
-- ⚡ Fast Performance
-- 🌙 Dark Theme Support
-- 🔒 Secure Authentication
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Commit your changes.
-4. Push to your branch.
-5. Open a Pull Request.
-
----
-
-# 👩‍💻 Developer
-
-**Punya Shree K S**
-
-Computer Science Engineering Student
-
-Passionate about Web Development, UI/UX Design, and Educational Technology.
-
----
-
-# 📄 License
-
-This project is developed for educational purposes.
-
----
-
-<div align="center">
-
-## ⭐ If you found this project helpful, please consider giving it a star!
-
-### Thank you for visiting KnowledgeNest ❤️
-
-</div>
+├── globals.css
+├── cellular-biology.jpg
+├── forces-motion.jpg
+├── rational-numbers.jpg
+└── rock-cycle.jpg
+________________________________________
+🖥️ User Interface Components
+🏠 Application Pages
+•	Home Page
+•	Login Page
+•	Application Layout
+________________________________________
+🎨 Main Components
+Dashboard
+•	Student Dashboard
+•	Progress Overview
+•	Quick Navigation
+Authentication UI
+•	Login Form
+•	Welcome Header
+•	Onboarding Flow
+Learning Interface
+•	Subject View
+•	Topic View
+•	Quiz View
+•	Translation View
+User Experience
+•	Language Selector
+•	Theme Toggle
+•	Theme Provider
+•	User Profile
+________________________________________
+🎮 Educational Games
+The platform provides interactive learning games to improve student engagement.
+Included Games
+🧩 Memory Game
+🔢 Number Pattern Game
+🔠 Word Scramble Game
+________________________________________
+🎨 Styling & Assets
+Global Styling
+•	Responsive Layout
+•	Tailwind CSS
+•	Theme Support
+•	Modern UI Components
+Educational Images
+•	Cellular Biology
+•	Forces & Motion
+•	Rational Numbers
+•	Rock Cycle
+________________________________________
+⚙️ Technologies Used
+Category	Technologies
+Framework	Next.js
+Frontend	React
+Language	TypeScript
+Styling	Tailwind CSS
+UI Components	Radix UI
+Icons	Lucide React
+Theme	next-themes
+________________________________________
+🎯 Frontend Workflow
+flowchart TD
+
+A[👤 Student]
+
+B[🏠 Home Page]
+
+C[📚 Dashboard]
+
+D[📖 Subjects]
+
+E[📄 Topics]
+
+F[📝 Quiz]
+
+G[🎮 Educational Games]
+
+H[👤 Profile]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+F --> G
+G --> H
+________________________________________
+🌟 Frontend Features
+Feature	Status
+Responsive UI	✅
+Student Dashboard	✅
+Interactive Notes	✅
+Smart Quizzes	✅
+Educational Games	✅
+Multi-language UI	✅
+Theme Support	✅
+User Profile	✅
+________________________________________
+🚀 Future Enhancements
+•	🤖 AI Learning Assistant
+•	🎙️ Voice-Based Learning
+•	📱 Mobile Responsive Improvements
+•	🏅 Achievement Badges
+•	📊 Student Analytics Dashboard
+•	💬 Community Discussion Forum
+•	☁️ Cloud Data Synchronization
+________________________________________
+👨‍💻 Developed By :PUNYASHREE KS
+Member A – Frontend/UI Developer
+Responsibilities
+•	🎨 User Interface Development
+•	📚 Educational Pages
+•	🧩 Interactive Components
+•	🌍 Language Support UI
+•	🎮 Educational Games
+•	🌙 Theme Management
+•	🖼️ UI Assets & Styling
+________________________________________
+📦 Version Information
+Property	Value
+Version	1.0
+Module	Frontend & User Interface
+Project	EDULIN Educational Learning Platform
+________________________________________
+⭐ Thank you for visiting EDULIN!
+🚀 Building a Modern & Interactive Learning Experience
+Made with ❤️ using Next.js, React, TypeScript, and Tailwind CSS
